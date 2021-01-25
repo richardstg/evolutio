@@ -1,0 +1,138 @@
+@import "../../styles/variables.scss";
+.background-image {
+  // background: url("../../images/wrapped-hands-retro.jpg") no-repeat;
+  // background-position: right 0px bottom 0px;
+  // opacity: 0.2;
+  // background-size: cover;
+  // background-attachment: fixed;
+  // @media (max-width: 900px) {
+  //   background-position: right -130px bottom 0px;
+  // }
+  // @media (max-width: 750px) {
+  //   background-position: right -220px bottom 0px;
+  // }
+  // @media (max-width: 500px) {
+  //   background-position: right -300px bottom 0px;
+  // }
+  // @media (max-width: 380px) {
+  //   background-position: right -350px bottom 0px;
+  // }
+}
+
+.outer-wrapper {
+  // padding-top: $vertical-rhythm * 5;
+  padding-bottom: $vertical-rhythm;
+  min-height: 85vh;
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  // background: linear-gradient(
+  //   45deg,
+  //   rgba(47, 50, 56, 1) 0%,
+  //   rgba(0, 0, 0, 0.2) 100%
+  // );
+  h4 {
+    margin-bottom: $vertical-rhythm;
+  }
+  p {
+    margin-bottom: $vertical-rhythm * 2;
+  }
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  // margin-bottom: $vertical-rhythm;
+}
+.button {
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 2px solid $button-color;
+  margin: 0;
+  border-radius: 0.12em;
+  border-radius: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: $body-font;
+  // font-weight: 300;
+  color: $button-color;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.4s ease-in;
+  box-shadow: inset 0px 0px 0px $button-color;
+  &:hover {
+    background-color: $button-color;
+    color: rgba(43, 43, 43, 1);
+    box-shadow: inset 0px 0px 150px $button-color;
+  }
+  &:focus {
+    outline: none !important;
+  }
+  z-index: 100;
+  // font-family: "Montserrat";
+  // text-transform: uppercase;
+  @media screen and (max-width: 575px) {
+    width: 100%;
+  }
+}
+
+// .button {
+//   background: transparent;
+//   font-size: 1.1rem;
+//   border: 0.1rem solid $button-color;
+//   color: $button-color;
+//   text-decoration: none;
+//   // height: $vertical-rhythm * 2 - 0.5rem;
+//   padding: 5px 15px;
+//   //padding: 5px 15px;
+//   border-radius: 0.5rem;
+//   position: relative;
+//   display: inline-block;
+//   cursor: pointer;
+//   transition: all 0.4s ease-in;
+//   box-shadow: inset 0px 0px 0px $button-color;
+//   &:hover {
+//     background-color: $button-color;
+//     border: 0.1rem solid $button-color;
+//     color: #3f3f3f;
+//     box-shadow: inset 0px 0px 150px $button-color;
+//   }
+//   // &:before {
+//   //   content: "";
+//   //   background-color: #00f0ff;
+//   //   border-radius: 1.1rem;
+//   //   display: block;
+//   //   position: absolute;
+//   //   top: 0;
+//   //   right: 0;
+//   //   bottom: 0;
+//   //   left: 0;
+//   //   transform: scale(0.001, 0.001);
+//   // }
+//   &:focus {
+//     outline: none !important;
+//     // &:before {
+//     //   animation: effect_dylan 0.8s ease-out;
+//     // }
+//   }
+//   @media (max-width: 767px) {
+//     width: 100%;
+//   }
+// }
+
+// @keyframes effect_dylan {
+//   50% {
+//     transform: scale(1.5, 1.5);
+//     opacity: 0;
+//   }
+//   99% {
+//     transform: scale(0.001, 0.001);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: scale(0.001, 0.001);
+//     opacity: 1;
+//   }
+// }

@@ -1,0 +1,51 @@
+@import "../../../styles/variables.scss";
+
+.footer {
+  //position: absolute;
+  //position: static;
+  //bottom: 0;
+  /* Set the fixed height of the footer here */
+  //min-height: 10px;
+  // min-height: 45vh;
+  width: 100%;
+  background-color: $background-color;
+  padding: $vertical-rhythm * 2 0;
+  //margin-top: $vertical-rhythm * 20;
+  text-align: center;
+  p {
+    color: #f5f5f5;
+    font-size: 0.95rem;
+  }
+  h6 {
+    margin-bottom: $vertical-rhythm;
+    color: #f5f5f5;
+  }
+}
+
+.copyright {
+  // margin: $vertical-rhythm auto;
+  font-size: 0.8rem;
+}
+
+.footer-nav {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-link {
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-family: $body-font;
+
+  &:hover {
+    color: #70d4ff;
+    //color: $button-color;
+    text-decoration: none;
+  }
+}
+.active-footer-link {
+  color: #70d4ff;
+  //color: $button-color;
+  //border-color: $button-color;
+}

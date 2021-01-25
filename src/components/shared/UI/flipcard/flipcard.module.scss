@@ -1,0 +1,82 @@
+.cardContainer {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  // img {
+  //   border-radius: 5px;
+  //   max-width: 100%;
+  //   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  // }
+  &:hover {
+    cursor: pointer;
+    // transform: scale(1.05, 1.05);
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   // background-color: rgba(170, 230, 200, 1);
+    //   opacity: 0;
+    //   border-radius: 5px;
+    // }
+  }
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba(170, 230, 200, 1);
+  //   opacity: 0.5;
+  //   border-radius: 5px;
+  // }
+}
+
+.card {
+  position: absolute;
+  will-change: transform, opacity;
+}
+
+.front {
+  width: 100%;
+  // width: 200px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.back {
+  width: 100%;
+  // width: 200px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 5px;
+  background-color: red;
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba(170, 230, 200, 1);
+  //   opacity: 0.8;
+  //   border-radius: 5px;
+  // }
+}
+
+.text {
+  position: absolute;
+  background-color: black;
+  transition: all 1s ease-in-out;
+  z-index: 7;
+}
+
+.cryptohelper {
+  background-image: url("../../../../images/CryptoHelper-3-2.jpg");
+}

@@ -1,0 +1,95 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.outer-wrapper {
+  min-height: 100vh;
+  padding-top: $vertical-rhythm * 4;
+  padding-bottom: 0;
+  // background: $background-color;
+  // @include angle(before, true);
+}
+
+.inner-wrapper {
+  // border-top: 0.1px solid rgba(250, 250, 250, 0.4);
+}
+
+.title {
+  color: $header-color;
+  text-align: center;
+  margin-bottom: $vertical-rhythm * 2;
+}
+
+.number {
+  color: $button-color;
+  font-family: "Mitr", serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.text {
+  margin-bottom: $vertical-rhythm;
+  color: $body-color;
+}
+
+.row {
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.imageBorder {
+  border: 0.1em solid $button-color;
+  border-radius: 5px;
+  // border-radius: 3rem;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: 100%;
+  width: 100%;
+  // background-color: rgba(170, 230, 200, 0.1);
+}
+
+.rightColumn {
+  @media (max-width: 991px) {
+    order: 2;
+    padding-left: $vertical-rhythm * 2;
+    padding-right: $vertical-rhythm * 2;
+  }
+  @media (max-width: 767px) {
+    order: 2;
+    padding-left: $vertical-rhythm;
+    padding-right: $vertical-rhythm;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // border-left: 0.1px solid rgba(250, 250, 250, 0.4);
+  padding-left: $vertical-rhythm * 2;
+}
+
+.leftColumn {
+  @media (max-width: 991px) {
+    text-align: center;
+    order: 1;
+    margin-bottom: $vertical-rhythm * 2;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: $vertical-rhythm;
+  }
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: $vertical-rhythm * 2;
+}

@@ -1,0 +1,176 @@
+@import "../../../styles/variables.scss";
+
+.navbar {
+  transition: all 0.2s ease-in;
+  text-align: center;
+  padding: 20px 40px !important;
+  z-index: 110;
+  &:focus {
+    outline: none;
+  }
+  li {
+    margin-bottom: 0;
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+  }
+  @media (max-width: 990px) {
+    padding: 10px 20px !important;
+    li {
+      margin-bottom: 20px;
+      list-style: none;
+      display: block;
+      margin-left: 0;
+    }
+    ul {
+      padding: 0;
+    }
+  }
+}
+
+.up {
+  @media (max-width: 1199px) {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    background: rgba(250, 250, 250, 0.801);
+    background-color: rgba(24, 33, 40, 0.701);
+    background: url("../../../images/noisy.png");
+  }
+}
+
+.down {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  background: rgba(250, 250, 250, 0.801);
+  background-color: rgba(24, 33, 40, 0.701);
+  background: url("../../../images/noisy.png");
+}
+
+.nav-link {
+  color: #e6e6e6;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: $header-font;
+  font-weight: 500;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 5px 15px;
+  &:hover {
+    text-shadow: 0 0 5px #ffffff;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.active-nav-link {
+  a {
+    color: rgba(255, 255, 255, 1);
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+      text-shadow: 0 0 5px #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+
+.number {
+  color: $button-color;
+  font-family: "Mitr", serif;
+  font-size: 0.85rem;
+}
+
+.navbarBrand {
+  display: inline-flex;
+  align-items: center;
+  svg {
+    width: 40px;
+    opacity: 0.85;
+    margin-left: 10px;
+  }
+  p {
+    margin: 0;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Navbar Hamburger animation */
+
+$color: rgba(170, 230, 200, 1);
+
+@mixin btn($left, $top) {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  // top: $top;
+  // left: $left;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  &:active {
+    background: rgba(255, 255, 255, 0.116);
+  }
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  // top: 30px;
+  background-color: $color;
+  margin-left: 1.75px;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  content: "";
+  top: $top;
+  right: 0;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  content: "";
+  top: $top;
+  right: 0;
+}
+
+.toggler {
+  border: none !important;
+  outline: none !important;
+  @include btn(0, 0);
+  .icon {
+    @include icon(4px, 30px);
+    &:before {
+      @include icon-before(4px, 30px, -10px);
+    }
+    &:after {
+      @include icon-after(4px, 30px, 10px);
+    }
+  }
+  &.open {
+    .icon {
+      transition-duration: 0.5s;
+      background: transparent;
+      &:before {
+        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+      }
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

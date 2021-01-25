@@ -1,0 +1,44 @@
+/* SCSS Variables */
+.footer {
+  /* Set the fixed height of the footer here */
+  width: 100%;
+  background-color: #2f3238;
+  padding: 3.52rem 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #f5f5f5;
+  font-size: 0.95rem;
+}
+
+.footer h6 {
+  margin-bottom: 1.76rem;
+  color: #f5f5f5;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+.footer-nav {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-link {
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-link:hover {
+  color: #70d4ff;
+  text-decoration: none;
+}
+
+.active-footer-link {
+  color: #70d4ff;
+}
+/*# sourceMappingURL=footer.module.css.map */

@@ -1,0 +1,150 @@
+/* SCSS Variables */
+.outer-wrapper {
+  min-height: 70vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(47, 50, 56, 0.85);
+  background: linear-gradient(45deg, rgba(47, 50, 56, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.color-layer {
+  background-color: rgba(47, 50, 56, 0.5);
+  margin: 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 0;
+  font-weight: bolder;
+  color: #ffff;
+  opacity: 0.85;
+}
+
+.subTitle {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.text {
+  font-size: 1.25rem;
+  margin-bottom: 3.52rem;
+}
+
+.rightColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leftColumn {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leftColumn svg {
+  width: 80%;
+  opacity: 0.85;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1199px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-wrapper {
+    padding-top: 5.28rem;
+    padding-bottom: 5.28rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .rightColumn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .leftColumn {
+    text-align: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .leftColumn svg {
+    margin-bottom: 3.52rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .title {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=intro.module.css.map */
