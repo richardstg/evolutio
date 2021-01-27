@@ -40,20 +40,33 @@ const Form = () => {
     <div className={classes.container}>
       <p>Call us on 0768000893 or send a message below.</p>
       {loading && <LoadingSpinner asOverlay />}
-      <Modal show={success} onCancel={() => setSuccess(false)}>
+      <Modal
+        show={success}
+        onCancel={() => {
+          setSuccess(false)
+          props.onCancel()
+        }}
+      >
         <h3>Thank you!</h3>
         <h3>We will get back to you shortly.</h3>
         <button
           onClick={event => {
             event.preventDefault()
             setSuccess(false)
+            props.onCancel()
           }}
           className={classes.button}
         >
           Close
         </button>
       </Modal>
-      <Modal show={fail} onCancel={() => setFail(false)}>
+      <Modal
+        show={fail}
+        onCancel={() => {
+          setFail(false)
+          props.onCancel()
+        }}
+      >
         <h3>
           Something went wrong. Please try again later or email directly at
           mikael@evolutioconsulting.se.
@@ -62,6 +75,7 @@ const Form = () => {
           onClick={event => {
             event.preventDefault()
             setFail(false)
+            props.onCancel()
           }}
           className={classes.button}
         >

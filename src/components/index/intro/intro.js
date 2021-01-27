@@ -79,7 +79,7 @@ const Intro = () => {
                   onCancel={() => setShowForm(false)}
                   header="Contact"
                 >
-                  <Form />
+                  <Form onCancel={() => setShowForm(false)} />
                 </Modal>
               </div>
             </Col>
