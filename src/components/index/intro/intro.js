@@ -12,6 +12,10 @@ const Intro = () => {
 
   return (
     <div className={classes.backgroundImage}>
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="email" name="email" />
+        <textarea name="message" />
+      </form>
       <Container id="intro" className={classes.outerWrapper} fluid>
         <Container className={classes.innerWrapper}>
           <Row className={classes.row}>

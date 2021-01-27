@@ -38,7 +38,7 @@ const Form = () => {
 
   return (
     <div className={classes.container}>
-      <p>Call us on 0700XXXXXX or send a message below.</p>
+      <p>Call us on 0768000893 or send a message below.</p>
       {loading && <LoadingSpinner asOverlay />}
       <Modal show={success} onCancel={() => setSuccess(false)}>
         <h3>Thank you!</h3>
@@ -55,8 +55,8 @@ const Form = () => {
       </Modal>
       <Modal show={fail} onCancel={() => setFail(false)}>
         <h3>
-          Something went wrong. Please try again later or us directly at
-          XXXXXXXXXXXXXX.
+          Something went wrong. Please try again later or email directly at
+          mikael@evolutioconsulting.se.
         </h3>
         <button
           onClick={event => {
