@@ -17,6 +17,7 @@ const Intro = () => {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        hidden
       >
         <input type="email" name="email" />
         <textarea name="message" />
