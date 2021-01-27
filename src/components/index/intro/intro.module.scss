@@ -20,11 +20,10 @@
 
 .outer-wrapper {
   min-height: 100vh;
-
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   background: radial-gradient(
@@ -32,6 +31,12 @@
     rgba(0, 0, 0, 0.1) 0%,
     rgba(0, 0, 0, 0.8) 100%
   );
+
+  &:after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
+  }
 }
 
 .inner-wrapper {

@@ -12,7 +12,7 @@ const encode = data => {
     .join("&")
 }
 
-const Form = () => {
+const Form = props => {
   const { register, handleSubmit, errors } = useForm()
 
   const [success, setSuccess] = useState(false)

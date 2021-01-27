@@ -39,10 +39,10 @@ const Intro = () => {
                   </div>
                 </div>
                 <div
-                  data-sal="fade"
-                  data-sal-delay="500"
-                  data-sal-duration="1000"
-                  data-sal-easing="ease-in-back"
+                // data-sal="fade"
+                // data-sal-delay="500"
+                // data-sal-duration="1000"
+                // data-sal-easing="ease-in-back"
                 >
                   <p className={classes.title}>
                     We are currently working on
