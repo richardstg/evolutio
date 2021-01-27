@@ -12,7 +12,12 @@ const Intro = () => {
 
   return (
     <div className={classes.backgroundImage}>
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <input type="email" name="email" />
         <textarea name="message" />
       </form>
