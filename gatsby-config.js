@@ -17,7 +17,7 @@ module.exports = {
     description: "Evolutio Consulting",
     url: "https://evolutioconsulting.se",
     siteUrl: "https://evolutioconsulting.se",
-    image: "/preview.png",
+    image: "/preview.jpg",
     twitterUsername: "",
   },
   plugins: [
