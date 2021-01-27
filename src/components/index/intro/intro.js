@@ -28,10 +28,10 @@ const Intro = () => {
             <Col lg={{ size: 8, offset: 2 }}>
               <div className={classes.container}>
                 <div
-                  data-sal="fade"
-                  data-sal-delay="300"
-                  data-sal-duration="1200"
-                  data-sal-easing="ease-in-back"
+                  // data-sal="fade"
+                  // data-sal-delay="300"
+                  // data-sal-duration="1200"
+                  // data-sal-easing="ease-in-back"
                   className={classes.logoContainer}
                 >
                   <div className={classes.logo}>
@@ -50,18 +50,18 @@ const Intro = () => {
                   </p>
                 </div>
                 <div
-                  data-sal="fade"
-                  data-sal-delay="1000"
-                  data-sal-duration="2000"
-                  data-sal-easing="ease-out-bounce"
+                  // data-sal="fade"
+                  // data-sal-delay="1000"
+                  // data-sal-duration="2000"
+                  // data-sal-easing="ease-out-bounce"
                   className={classes.buttonDiv}
                 >
                   <Scroll type="id" element="contact">
                     <a
-                      data-sal="slide-down"
-                      data-sal-delay="100"
-                      data-sal-duration="800"
-                      data-sal-easing="ease-in-out-back"
+                      // data-sal="slide-down"
+                      // data-sal-delay="100"
+                      // data-sal-duration="800"
+                      // data-sal-easing="ease-in-out-back"
                       aria-label="Contact"
                       href="!#"
                     >
